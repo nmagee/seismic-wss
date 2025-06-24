@@ -28,7 +28,7 @@ def listen(ws):
         msg = yield ws.read_message()
         if msg is None:
             logging.info("close")
-            self.ws = None
+            # self.ws = None # 'self' is not defined here. The ws object is local to this coroutine.
             break
         myprocessing(msg)
 
