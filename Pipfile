@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 asyncio = "*"
 tornado = "*"
+pytest = "*"
+pytest-asyncio = "*"
 
 [dev-packages]
 
